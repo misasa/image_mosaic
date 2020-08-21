@@ -12,3 +12,5 @@ jobs:
         username: yyachi
         password: ${{ secrets.GPR_AUTH_TOKEN }}
         registry: docker.pkg.github.com
+        dockerfile: docker/Dockerfile
+        tags: "latest,${{ env.RELEASE_VERSION }}"
